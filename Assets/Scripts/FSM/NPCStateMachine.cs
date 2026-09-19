@@ -21,6 +21,10 @@ namespace Core.FSM
             HarvestState harvest = new HarvestState(renderer, agent);
             RestState rest = new RestState(renderer, agent);
 
+            // Two extra village states required by the Lab 2 challenge
+            GuardState guard = new GuardState(renderer, agent);
+            BlacksmithState blacksmith = new BlacksmithState(renderer, agent);
+
             stateMachine.AddTransition(
                 rest,
                 patrol,
@@ -40,6 +44,30 @@ namespace Core.FSM
                     Keyboard.current.rKey.wasPressedThisFrame));
             stateMachine.AddTransition(
                 patrol,
+                rest,
+                new FuncPredicate(() =>
+                    Keyboard.current.rKey.wasPressedThisFrame));
+
+            // Guard state transitions
+           stateMachine.AddTransition(
+                rest,
+                guard,
+                new FuncPredicate(() =>
+                    Keyboard.current.gKey.wasPressedThisFrame));
+            stateMachine.AddTransition(
+                guard,
+                rest,
+                new FuncPredicate(() =>
+                    Keyboard.current.rKey.wasPressedThisFrame));
+
+            // Blacksmith state transitions
+            stateMachine.AddTransition(
+                rest,
+                blacksmith,
+                new FuncPredicate(() =>
+                    Keyboard.current.bKey.wasPressedThisFrame));
+            stateMachine.AddTransition(
+                blacksmith,
                 rest,
                 new FuncPredicate(() =>
                     Keyboard.current.rKey.wasPressedThisFrame));
