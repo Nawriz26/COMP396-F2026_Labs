@@ -259,6 +259,7 @@ GameObject:
   - component: {fileID: 325670945}
   - component: {fileID: 325670944}
   - component: {fileID: 325670948}
+  - component: {fileID: 325670949}
   m_Layer: 0
   m_Name: EnemyNPC
   m_TagString: Untagged
@@ -383,6 +384,30 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &325670949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325670943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc8670a89627ae489796d31b6d4afcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Core.FSM.EnemyFSMController
+  player: {fileID: 1156062987}
+  waypoints:
+  - {fileID: 1920653498}
+  - {fileID: 1572295354}
+  - {fileID: 712004020}
+  - {fileID: 399669682}
+  returnPoint: {fileID: 1920653498}
+  idleDuration: 2
+  detectionRange: 8
+  attackRange: 2.5
+  losePlayerRange: 12
+  attackCooldown: 1.5
 --- !u!1 &399669681
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,7 +759,7 @@ Transform:
   m_GameObject: {fileID: 1156062983}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 10, y: 1, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
