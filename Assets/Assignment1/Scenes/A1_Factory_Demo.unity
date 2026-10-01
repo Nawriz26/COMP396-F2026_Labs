@@ -709,6 +709,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1696017620}
+  - component: {fileID: 1696017621}
+  - component: {fileID: 1696017622}
   m_Layer: 0
   m_Name: FactorySystem
   m_TagString: Untagged
@@ -731,6 +733,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1696017621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696017619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de4f7e90bb5b4f443ac5477565c72517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assignment1.Factory.NPCFactory
+  npcPrefab: {fileID: 7452848181377574104, guid: 6494e525ee03dc24fb3c2e01868f1830, type: 3}
+--- !u!114 &1696017622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696017619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c4187a3d474da948b38621862a94e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assignment1.Factory.FactoryDemoManager
+  npcFactory: {fileID: 1696017621}
+  guardSpawnPoint: {fileID: 1274704105}
+  scoutSpawnPoint: {fileID: 1544849303}
+  heavySpawnPoint: {fileID: 1180195857}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
