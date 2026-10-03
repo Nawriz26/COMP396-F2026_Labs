@@ -48,8 +48,11 @@ namespace Assignment1.Factory
         private void Update()
         {
             // Slowly rotate the NPC so its factory-created appearance is visible.
+            //transform.Rotate(
+            //    Vector3.up,
+            //    movementSpeed * 15f * Time.deltaTime);
             transform.Rotate(
-                Vector3.up,
+                Vector3.forward,
                 movementSpeed * 15f * Time.deltaTime);
         }
     }

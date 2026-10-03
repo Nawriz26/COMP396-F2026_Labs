@@ -6,16 +6,14 @@ namespace Core.FSM
     public class HarvestState : BaseState
     {
         private GameObject harvestingPlot;
-
-        //private UnityEngine.AI.NavMeshAgent agent;
-
-
-        public HarvestState(MeshRenderer renderer, UnityEngine.AI.NavMeshAgent agent) : base(renderer, agent)
+        public HarvestState(MeshRenderer renderer, NavMeshAgent agent) : base(renderer, agent)
         {
         }
 
         public override void Enter()
         {
+            base.Enter();
+            Debug.Log("HarvestState.Enter()");
             meshRenderer.material.color = Color.green;
             harvestingPlot = GameObject.FindWithTag("HarvestingPlot");
             agent.SetDestination(harvestingPlot.transform.position);
@@ -24,14 +22,13 @@ namespace Core.FSM
 
         public override void Update()
         {
-            
+            base.Update();
         }
 
         public override void Exit()
         {
             base.Exit();
             harvestingPlot = null;
-            
         }
     }
 }
