@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ba30453bc1e5b40b5505bea76c340d, type: 3}
+  m_Name: Water
+  m_EditorClassIdentifier: Core::Core.WFC.TileData
+  tileName: Water
+  prefab: {fileID: 440772503487923433, guid: f29074332b1cbb7499985964d8d4aef9, type: 3}
+  validBottom:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 71c59ff2c44e1264d9e5139789de18a5, type: 2}
+  validLeft:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 72ae492f384f96c4fb57f189a8ff5ca2, type: 2}
+  validRight:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 5af90144abc837140a908354df79eff9, type: 2}
+  validTop:
+  - {fileID: 11400000}
+  - {fileID: 11400000, guid: 03df3fc4704beb8458b30f30725cf365, type: 2}
