@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7545701413960517719}
   - component: {fileID: 8679682809717413870}
   - component: {fileID: -1979398452158656485}
+  - component: {fileID: -8642938678044110077}
   m_Layer: 0
   m_Name: BT_Guard
   m_TagString: Enemy
@@ -153,7 +154,7 @@ MonoBehaviour:
   m_Graph: {fileID: -7855947292176828180, guid: 8fc218e76cb897c42b968bfe135ae7d5, type: 2}
   m_BlackboardVariableOverridesList:
   - rid: 9201375503897067867
-  - rid: 9201375503897067869
+  - rid: 9201375503897067868
   m_OriginalGraph: {fileID: 0}
   m_IsInitialised: 0
   m_IsStarted: 0
@@ -168,7 +169,7 @@ MonoBehaviour:
           m_Value1: 0
         Name: Self
         m_Value: {fileID: 4797402527384029364}
-    - rid: 9201375503897067869
+    - rid: 9201375503897067868
       type: {class: 'BlackboardVariable`1[[System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]], mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
       data:
         GUID:
@@ -180,3 +181,18 @@ MonoBehaviour:
         - {fileID: 0}
         - {fileID: 0}
         - {fileID: 0}
+--- !u!114 &-8642938678044110077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4797402527384029364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a453f195ae8688748b7f42997d79aeb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Guard
+  _dyingDuckSound: {fileID: 8300000, guid: 4202d5387e31f434c815264f300058ed, type: 3}
+  _graph: {fileID: 0}
+  _goEventChannel: {fileID: 11400000, guid: cc87e63bc0794c74ab7133aa51327cf1, type: 2}

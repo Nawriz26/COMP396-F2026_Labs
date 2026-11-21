@@ -15,8 +15,8 @@
   <Project Path="Unity.Collections.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.2D.Runtime.csproj" />
   <Project Path="UnityEngine.UI.csproj" />
-  <Project Path="Unity.RenderPipelines.Universal.Runtime.csproj" />
   <Project Path="Unity.ProBuilder.Poly2Tri.csproj" />
+  <Project Path="Unity.RenderPipelines.Universal.Runtime.csproj" />
   <Project Path="Unity.VisualScripting.Core.Editor.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.Editor.csproj" />
   <Project Path="Unity.PerformanceTesting.Editor.csproj" />
@@ -124,8 +124,8 @@
   <Project Path="Unity.Collections.Player.csproj" />
   <Project Path="Unity.RenderPipelines.Universal.2D.Runtime.Player.csproj" />
   <Project Path="UnityEngine.UI.Player.csproj" />
-  <Project Path="Unity.RenderPipelines.Universal.Runtime.Player.csproj" />
   <Project Path="Unity.ProBuilder.Poly2Tri.Player.csproj" />
+  <Project Path="Unity.RenderPipelines.Universal.Runtime.Player.csproj" />
   <Project Path="UnityEngine.TestRunner.Player.csproj" />
   <Project Path="Unity.Splines.Player.csproj" />
   <Project Path="Unity.AppUI.Redux.Player.csproj" />
@@ -134,7 +134,6 @@
   <Project Path="Unity.Behavior.Serialization.Player.csproj" />
   <Project Path="Assembly-CSharp.Player.csproj" />
   <Project Path="Unity.VisualScripting.Core.Player.csproj" />
-  <Project Path="Unity.UnifiedRayTracing.Runtime.Player.csproj" />
   <Project Path="Unity.Cinemachine.Player.csproj" />
   <Project Path="Unity.VisualScripting.Flow.Player.csproj" />
   <Project Path="Unity.PerformanceTesting.Player.csproj" />
@@ -151,12 +150,10 @@
   <Project Path="Unity.RenderPipelines.Core.Runtime.Shared.Player.csproj" />
   <Project Path="Unity.AppUI.Navigation.Player.csproj" />
   <Project Path="Unity.AI.Navigation.Player.csproj" />
-  <Project Path="Unity.PathTracing.Runtime.Player.csproj" />
   <Project Path="Unity.InputSystem.TestFramework.Player.csproj" />
   <Project Path="Unity.StarterAssets.Player.csproj" />
   <Project Path="Unity.Profiling.Core.Player.csproj" />
   <Project Path="Unity.AppUI.Undo.Player.csproj" />
-  <Project Path="Unity.SurfaceCache.Runtime.Player.csproj" />
   <Project Path="Unity.InternalAPIEngineBridge.RenderPipelines.Core.Runtime.Shared.Player.csproj" />
   <Project Path="Unity.Collections.Tests.CoreCLR.InternalJobNestedPrivate.Player.csproj" />
   <Project Path="Unity.RenderPipeline.Universal.ShaderLibrary.Player.csproj" />

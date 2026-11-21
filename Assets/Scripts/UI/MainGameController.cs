@@ -1,9 +1,11 @@
 using UnityEngine;
 using TMPro;
 using Unity.Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class MainGameController : MonoBehaviour
 {
+    [SerializeField] private GameObjectEventChannel _goEvent;
     [SerializeField] private BoolEventChannel _boolEvent;
     [SerializeField] private PlayerDataSO _playerData;
     [SerializeField] private TMP_Text _uiText;
@@ -17,13 +19,14 @@ public class MainGameController : MonoBehaviour
 
     private void OnEnable()
     {
-        GameObject playerBody = Instantiate(_playerPrefab, Vector3.zero, Quaternion.identity);
-        GameObject playerFollowCam = Instantiate(_playerFollowCam, Vector3.zero, Quaternion.identity);
+        GameObject playerBody =  Instantiate(_playerPrefab, Vector3.zero, Quaternion.identity);
+        GameObject playerFollowCam =  Instantiate(_playerFollowCam, Vector3.zero, Quaternion.identity);
         playerFollowCam.GetComponent<CinemachineCamera>().Target = new CameraTarget
         {
             TrackingTarget = playerBody.transform.GetChild(0).transform
         };
         Instantiate(_mainCam, Vector3.zero, Quaternion.identity);
+        _goEvent?.RaiseEvent(playerBody);
     }
 
     private void Update()
