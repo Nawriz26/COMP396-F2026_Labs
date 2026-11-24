@@ -827,7 +827,7 @@ MonoBehaviour:
     - line: '|     QNX: UNITY_POST_PROCESSING_STACK_V2'
     - line: '|     Standalone: UNITY_POST_PROCESSING_STACK_V2'
     - line: '|     VisionOS: UNITY_POST_PROCESSING_STACK_V2'
-    - line: '|     WebGL: UNITY_POST_PROCESSING_STACK_V2'
+    - line: '|     WebGL: UNITY_POST_PROCESSING_STACK_V2;APP_UI_EDITOR_ONLY'
     - line: '|     XboxOne: UNITY_POST_PROCESSING_STACK_V2'
     - line: '|     tvOS: UNITY_POST_PROCESSING_STACK_V2'
     - line: '|   additionalCompilerArguments: {}'
