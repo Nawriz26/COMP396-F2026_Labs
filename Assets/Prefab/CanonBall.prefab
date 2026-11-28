@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 248821373717243859}
   - component: {fileID: 529590842303559494}
   - component: {fileID: 3240753818075648204}
+  - component: {fileID: -5980920213214099448}
   m_Layer: 0
   m_Name: CanonBall
   m_TagString: Untagged
@@ -239,6 +240,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-5980920213214099448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4569734913110123415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e403503f30b924a9d69170c6e2534f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CanonBall
+  _goEvent: {fileID: 11400000, guid: cc87e63bc0794c74ab7133aa51327cf1, type: 2}
 --- !u!1 &8448424957304071210
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using Unity.Cinemachine;
-using UnityEngine.SceneManagement;
 
 public class MainGameController : MonoBehaviour
 {
@@ -13,6 +12,8 @@ public class MainGameController : MonoBehaviour
     [SerializeField] private GameObject _playerPrefab;
     [SerializeField] private GameObject _playerFollowCam;
     [SerializeField] private GameObject _mainCam;
+
+    [SerializeField] private AudioClip _dyingAudioClip;
 
     private float timer = 0f;
     private bool _chasePlayer = false;
@@ -27,6 +28,27 @@ public class MainGameController : MonoBehaviour
         };
         Instantiate(_mainCam, Vector3.zero, Quaternion.identity);
         _goEvent?.RaiseEvent(playerBody);
+        _goEvent.OnEventTypeRaised += DebugEventLog;
+    }
+    private void OnDisable()
+    {
+        _goEvent.OnEventTypeRaised -= DebugEventLog;
+    }
+
+    private void DebugEventLog(GameObject go, GameObjectEventType eventType)
+    {
+        switch (eventType)
+        {
+            case GameObjectEventType.Death:
+                AudioSource.PlayClipAtPoint(_dyingAudioClip, go.transform.position);
+                break;
+            case GameObjectEventType.SpawnParticle:
+                Debug.Log($"[GameObjectEventType] - {go.name} at {go.transform.position} on a event of {eventType}");
+                break;
+            case GameObjectEventType.None:
+            default:
+                break;
+        }
     }
 
     private void Update()
