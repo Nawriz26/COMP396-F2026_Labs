@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.photonengine.fusion-inspector": "https://github.com/Photon-Server/Photon-UPM.git#fusion/v2/fusion-inspector",
     "com.unity.ai.navigation": "2.0.14",
     "com.unity.behavior": "1.0.17",
     "com.unity.burst": "2.0.0",
@@ -9,6 +10,7 @@
     "com.unity.dt.app-ui": "2.2.7",
     "com.unity.ide.visualstudio": "2.0.28",
     "com.unity.inputsystem": "1.20.0",
+    "com.unity.nuget.mono-cecil": "1.10.2",
     "com.unity.postprocessing": "3.5.4",
     "com.unity.probuilder": "6.1.2",
     "com.unity.project-auditor-rules": "1.0.3",

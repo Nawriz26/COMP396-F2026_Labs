@@ -24,12 +24,16 @@
   <Project Path="UnityEngine.TestRunner.csproj" />
   <Project Path="Unity.Splines.csproj" />
   <Project Path="Unity.AppUI.Redux.csproj" />
+  <Project Path="Fusion.Unity.Editor.csproj" />
+  <Project Path="Fusion.Unity.csproj" />
   <Project Path="Unity.Behavior.csproj" />
   <Project Path="Unity.VisualScripting.Flow.Editor.csproj" />
   <Project Path="Unity.ProBuilder.Csg.csproj" />
   <Project Path="Unity.VisualStudio.Editor.csproj" />
   <Project Path="Unity.Behavior.Serialization.csproj" />
+  <Project Path="Fusion.Addons.Inspector.Editor.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Photon.Realtime.csproj" />
   <Project Path="Unity.Searcher.Editor.csproj" />
   <Project Path="Unity.ProBuilder.Editor.csproj" />
   <Project Path="UnityEditor.TestRunner.csproj" />
@@ -109,6 +113,7 @@
   <Project Path="Unity.Collections.Tests.CoreCLR.PrivateJobNested.csproj" />
   <Project Path="Unity.PlasticSCM.Editor.Entities.csproj" />
   <Project Path="Unity.Collections.Tests.CoreCLR.ProtectedJobNested.csproj" />
+  <Project Path="Unity.Fusion.CodeGen.csproj" />
   <Project Path="Unity.Burst.csproj" />
   <Project Path="Unity.Rendering.LightTransport.Editor.csproj" />
   <Project Path="Unity.Collections.Editor.csproj" />
@@ -130,10 +135,12 @@
   <Project Path="Unity.RenderPipelines.Universal.Runtime.Player.csproj" />
   <Project Path="UnityEngine.TestRunner.Player.csproj" />
   <Project Path="Unity.Splines.Player.csproj" />
+  <Project Path="Fusion.Unity.Player.csproj" />
   <Project Path="Unity.Behavior.Player.csproj" />
   <Project Path="Unity.ProBuilder.Csg.Player.csproj" />
   <Project Path="Unity.Behavior.Serialization.Player.csproj" />
   <Project Path="Assembly-CSharp.Player.csproj" />
+  <Project Path="Photon.Realtime.Player.csproj" />
   <Project Path="Unity.VisualScripting.Core.Player.csproj" />
   <Project Path="Unity.Cinemachine.Player.csproj" />
   <Project Path="Unity.VisualScripting.Flow.Player.csproj" />
@@ -163,6 +170,7 @@
   <Project Path="Unity.ProBuilder.Stl.Player.csproj" />
   <Project Path="Unity.VisualScripting.DocCodeExamples.Player.csproj" />
   <Project Path="Unity.Collections.Tests.CoreCLR.PrivateJobNested.Player.csproj" />
+  <Project Path="PhotonWebSocket.Player.csproj" />
   <Project Path="Unity.Collections.Tests.CoreCLR.ProtectedJobNested.Player.csproj" />
   <Project Path="Unity.Burst.Player.csproj" />
   <Project Path="Unity.Mathematics.Player.csproj" />
